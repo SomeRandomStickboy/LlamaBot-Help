@@ -232,7 +232,7 @@
 								<p class="title is-2">Increase <strong>activity</strong> on <strong>your</strong> server</p>
 								<p class="subtitle is-4">LlamaBot provides tons of <strong>in-chat tools</strong>.</p>
 								<p>
-									Whether your server has 5 members or 5000, you can rely on LlamaBot to make it enjoyable while doing a great job of moderating pesky rulebreakers. We've included plenty of powerful, customizable, and fun commands as well as a robust extension system, making LlamaBot the only bot you'll need for an awesome Discord server experience.
+									Whether your server has 5 members or 5000, you can rely on LlamaBot to make it enjoyable while doing a great job of moderating pesky rulebreakers. We've included plenty of powerful, customizable, and fun commands as well as a robust extension system. The bot is always being worked on, so nothing stale or predictable! With so many things going for it, LlamaBot must be the only bot you'll need for an awesome Discord server experience.
 								</p>
 							</div>
 						</div>
@@ -312,7 +312,7 @@
 								</div>
 								<div class="tile is-child has-text-centered">
 									<span class="icon is-large">
-										<i class="fa fa-sort"></i>
+										<i class="fa fa-refresh fa-spin"></i>
 									</span>
 									<p class="title is-4"><strong>Unit</strong> converting</p>
 								</div>
