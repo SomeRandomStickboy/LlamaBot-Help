@@ -274,7 +274,7 @@
 									<span class="icon is-large">
 										<i class="fa fa-table"></i>
 									</span>
-									<p class="title is-4"><strong>Moderation </strong>Logging</p>
+									<p class="title is-4"><strong>Mod</strong>Logging</p>
 								</div>
 							</div>
 							<div class="tile is-parent is-vertical">
@@ -288,7 +288,7 @@
 									<span class="icon is-large">
 										<i class="fa fa-book"></i>
 									</span>
-									<p class="title is-4"><strong>Urban</strong> Dictionary search</p>
+									<p class="title is-4"><strong>Urban</strong> Dictionary</p>
 								</div>
 								<div class="tile is-child has-text-centered">
 									<span class="icon is-large">
