@@ -1,0 +1,90 @@
+LlamaBot Advanced Moderation
+(For the prefix I will be using "{")
+(All [user] and [role] arguments are mentions)
+
+{filter [user(optional)] [amount] - Finds any messages containing words that you specify in the dashboard and deletes those messages.
+{blind [user] - Allows a user to talk but not see messages
+{unblind [user] - Unblinds a user
+{keller [user] - Removes all sending and message viewing privileges in all channels except a channel called #jail, where they can only view messages.
+{unkeller [user] - Removes the Keller effect from a user
+{roleclear [user] - Clears all a users' roles.
+{teach [user] [message] - Spams a user with the specified message 10 times via DM. 
+{distort [user] - Distorts the messages of a user. Ex. I am a free thinking cow = I m fRe tiKG Cw
+{undistort [user] - Undistorts a user
+{noteadd [user] [note] - Adds a note to a user
+{note [user] - Views user notes
+{release [user] - Relieves all punishments from a user, and deletes their strikes.
+{nick [user] [nickname] - Gives a user a nickname
+{link [user] [user] [name]- Links a user so that when one user says something, the other user says something, and vice versa. Ex. When ViiRal and BiiNary are linked, ViiRal saying "SRS sucks" will make a BiiNary say the same, and vice versa(link name is used when unlinking)
+{unlink [name] - Removes the link by name
+
+-----
+
+LlamaBot Teams
+(For the prefix I will be using "{")
+(All [user] and [role] arguments are mentions)
+
+Team Rank Perms:
+New - No perms
+Member - Able to use team chat
+Co-owner - Can moderate team members as well as use team chat admin commands
+Owner - All perms
+
+**Basic**
+{team create [name] - Creates a team 
+{team join [name] - Joins a team/requests to join a team
+{team invite [user] - Sends the specified user a DM asking if they want to join the team
+{team accept - When used in DM, it accepts the last DM invite given to you. If you're the owner of a team, the also person to try and join your team is accepted in.
+{team rejectinv - Does not allow people to invite you to their team
+{team leave - Leaves current team
+{team online - Displays online team members in a DM
+{team del - Deletes your team
+{team owntrans [user] - Transfers team ownership to someone else
+{team rank [new,member,co-owner,owner] [user] - Assigns a rank to someone
+{team chat - Joins the team chat(Group DM with LlamaBot in it)
+{team montrans [amount] - Transfers money to bank
+{team monwith [amount] - Withdraws money from bank(Co-Owner and above)
+{team buyfeature [chat,bank,online,custom] - Uses economy money to buy a feature(Chat is Team Chat. Bank is Withdrawal and Money Transfer. Online is team online list. Custom is a rank in which you can set the perms, but costs actual money to use for your server. $0.99 for individual teams, $4.99 for a whole server)
+{team custom [chat,admincom,withdraw,trans] - Sets permissions for the custom rank
+{team customname - Sets name for the custom rank
+
+**Setup**
+{teamset create [true/false] - Sets whether or not people can create teams
+{teamset createxc [user/role] - Sets the {teamset create rule to the opposite for this rank or member(Ex. If people can't make a team, then these people will be able to, and vice versa)
+{teamset createcost [amount] - Sets amount of money required to create a team
+{teamset namefilter [phrase] - Reserves or filters group names
+{teamset forcejoin [user] [team] - Forces a user to join a team
+{teamset forceinv [user] [team] - Forces an invite to a team to a certain user
+{teamset rejectinv [true/false] - Sets whether a player can reject an invite or not
+{teamset forceleave [user] - Forces a user to leave a team
+{teamset online [true/false] - Sets ability to check online list of team members
+{teamset chatjoin [team/user] - Gives you an invite to the group DM of a users team or the team specified
+{teamset buyfeature [chat,bank,online] [amount] - Allows you to set amount of money a team feature costs
+{teamset process - Reboots bot on your server. Used to refresh if you bought the custom
+{teamset tax [amount] [time] - Sets an upkeep tax on a team and how often it applies. If the team bank runs out of money then it gets deleted
+{teamset taxset [true/false] - Sets whether or not taxes apply
+
+-----
+
+LlamaBot Economy
+(For the prefix I will be using "{")
+(All [user] and [role] arguments are mentions)
+
+**Economy**
+{economy reg - Registers a bank account so that you can use the economy features
+{economy work - Earns money
+{economy train - Train for a set period of time to increase your chance of scam and bribe success by a set percentage
+{economy scam [user] - Attempts scam
+{economy transfer [user] [amount] - Transfers money to specified user
+{economy collect - If you have a specific rank, you can collect taxes
+{economy loan [amount] - Gets a loan from the bank. 1% interest per 3 days. Fail to pay back and you get negative currency
+{economy bribe [amount] - Attempts to bribe bank into clearing all loan interest. The higher the currency described the better chance you have.
+
+**Economy Management**
+{economyset train [time in seconds] [percentage increase] - Modifies percentage increase and time taken to train
+{economyset workpay [role] [amount] [time(optional] - Modifies amount of pay a role gets, and optionally, the time it takes to work.
+{economyset transban [role/member] - Disables transfers for a specific role or player
+{economyset tax [amount] [time in seconds] - Describes tax amount and amount of time before you need to pay a tax. Distributed evenly among roles who can collect taxes
+{economyset taxcollecter [user/role] - Describes who can collect taxes
+{economyset crimetoggle [true/false] [role/user(optional)] - Disables who can bribe and scam, or if anyone can do it.
+{economyset toggle [on/off] - Describes if economy commands work at all
